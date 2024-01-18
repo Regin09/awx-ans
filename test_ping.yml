@@ -1,6 +1,6 @@
 ---
 - name: Ping test
-  hosts: TACACS_IP
+  hosts: localhost
   tasks:
     - name: Test ping
       ping:
