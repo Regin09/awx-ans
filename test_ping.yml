@@ -1,6 +1,10 @@
 ---
 - name: Ping test
-  hosts: localhost
+  hosts: TACACS_IP
   tasks:
     - name: Test ping
       ping:
+
+    - name: Display ping results
+      debug:
+        var: ansible_ping.results
