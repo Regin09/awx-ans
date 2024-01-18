@@ -1,0 +1,6 @@
+---
+- name: Ping test
+  hosts: your_ubuntu_server
+  tasks:
+    - name: Test ping
+      ping:
