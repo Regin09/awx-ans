@@ -1,10 +1,10 @@
 ---
 - name: Ping test
   hosts: all
+  gather_facts: false
   tasks:
     - name: Test ping
       ping:
-
     - name: Display ping results
       debug:
-        var: ansible_ping.results
+        var: ansible_ping
