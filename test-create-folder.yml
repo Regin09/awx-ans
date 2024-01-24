@@ -1,0 +1,11 @@
+---
+- name: Create Folder on Ubuntu Target
+  hosts: TACACS_IP
+  gather_facts: false
+  become: true
+
+  tasks:
+    - name: Create folder on target
+      file:
+        path: /home/90168890/TestAWX # Specify the path where you want to create the folder
+        state: directory
